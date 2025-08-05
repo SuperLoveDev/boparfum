@@ -4,6 +4,7 @@ import Title from "../Components/Title";
 import Collections from "../Components/Collections";
 import Populaire from "../Components/Populaire";
 import Policy from "../Components/Policy";
+import Footer from "../Components/Footer";
 
 const Accueil = () => {
   return (
@@ -13,6 +14,7 @@ const Accueil = () => {
       <Collections />
       <Populaire />
       <Policy />
+      <Footer />
     </>
   );
 };
