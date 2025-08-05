@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Accueil from "./Pages/Accueil";
 import Parfum from "./Pages/Parfum";
 import Nouveaute from "./Pages/Nouveaute";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/parfums" element={<Parfum />} />
           <Route path="/nouveaute" element={<Nouveaute />} />
         </Routes>
+        <Footer />
       </div>
     </>
   );
