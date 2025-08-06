@@ -8,12 +8,29 @@ import sucrenoir from "../assets/images/sucre_noir.png";
 import rougemagic from "../assets/images/rouge_magic.png";
 import moula from "../assets/images/moula.png";
 import cocovanille from "../assets/images/CocoVanille.png";
-
 import attrape from "../assets/images/attrape.png";
 import aicha from "../assets/images/aicha.png";
 import bakara from "../assets/images/bakara.png";
 import bois from "../assets/images/bois.png";
 import monoi from "../assets/images/monoi.png";
+import cherrykokomo from "../assets/images/cherrykokomo.png";
+import vulkarelm from "../assets/images/vulkarelm.png";
+import vanillevoyage from "../assets/images/vanillevoyage.png";
+import VanillaPowdery from "../assets/images/VanillaPowdery.png";
+import Vanillaonthebeach from "../assets/images/Vanillaonthebeach.png";
+import vanillaExtreme from "../assets/images/VanillaExtreme.png";
+import tahiticolada from "../assets/images/tahiticolada.png";
+import rubyfizz from "../assets/images/rubyfizz.png";
+import oudfashion from "../assets/images/oudfashion.png";
+import oceanwave from "../assets/images/OceanWave.png";
+import nowwomen from "../assets/images/NowwomanLattafa.png";
+import monoisauvage from "../assets/images/monoisauvage.png";
+import mojitoobsession from "../assets/images/mojitogulforchid.png";
+import marshmallow from "../assets/images/Marshmallow.png";
+import mangotini from "../assets/images/mangotini.png";
+import liquidbrun from "../assets/images/liquidbrun.png";
+import egoutoirs from "../assets/images/Egoutoirs.png";
+import ambrariviera from "../assets/images/AmbraRiviera.png";
 
 const collections = [
   {
@@ -155,4 +172,115 @@ const parfum = [
   },
 ];
 
-export { collections, products, parfum };
+const nouveaute = [
+  {
+    id: "1",
+    image: cherrykokomo,
+    name: "Cherry kokomo - FEMME",
+    price: "12 000",
+  },
+  {
+    id: "2",
+    image: vulkarelm,
+    name: "Vulkarelm - HOMME",
+    price: "12 000",
+  },
+  {
+    id: "3",
+    image: vanillevoyage,
+    name: "Vanillé Voyage - HOMME",
+    price: "12 000",
+  },
+  {
+    id: "4",
+    image: VanillaPowdery,
+    name: "Vanilla Powdery - FEMME",
+    price: "12 000",
+  },
+  {
+    id: "5",
+    image: Vanillaonthebeach,
+    name: "Vanilla on the Beach - FEMME",
+    price: "12 000",
+  },
+  {
+    id: "6",
+    image: vanillaExtreme,
+    name: "Vanilla Extreme - FEMME",
+    price: "12 000",
+  },
+  {
+    id: "7",
+    image: tahiticolada,
+    name: "Tahiti colada - HOMME",
+    price: "12 000",
+  },
+  {
+    id: "8",
+    image: oceanwave,
+    name: "Ocean Wave - Unisexe",
+    price: "12 000",
+  },
+  {
+    id: "9",
+    image: rubyfizz,
+    name: "Ruby fizz - FEMME",
+    price: "12 000",
+  },
+  {
+    id: "10",
+    image: oudfashion,
+    name: "Oud Fashion - Unisexe",
+    price: "12 000",
+  },
+  {
+    id: "11",
+    image: nowwomen,
+    name: "Now Women - FEMME",
+    price: "12 000",
+  },
+  {
+    id: "12",
+    image: monoisauvage,
+    name: "Monoi Sauvage - HOMME",
+    price: "12 000",
+  },
+  {
+    id: "13",
+    image: mojitoobsession,
+    name: "Mojito Obsession - HOMME",
+    price: "12 000",
+  },
+  {
+    id: "14",
+    image: marshmallow,
+    name: "Marshmallow Crash - FEMME",
+    price: "12 000",
+  },
+  {
+    id: "15",
+    image: mangotini,
+    name: "Mangotini - UNISEXE",
+    price: "12 000",
+  },
+  {
+    id: "16",
+    image: liquidbrun,
+    name: "Liquid Brun - HOMME",
+    price: "12 000",
+  },
+  {
+    id: "17",
+    image: egoutoirs,
+    name: "Egoutoirs - UNISEXE",
+    price: "12 000",
+  },
+  {
+    id: "18",
+    image: ambrariviera,
+    name: "Ambra Riviera - HOMME",
+    price: "12 000",
+  },
+];
+
+export { collections, products, parfum, nouveaute };

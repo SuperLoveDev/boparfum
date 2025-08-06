@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ChevronDown, X } from "lucide-react";
 import { parfum } from "../assets/products";
+import ParfumProduct from "./ParfumProduct";
 
 const ParfumFilter = () => {
   const categories = ["Tous", "Homme", "Femme", "Unisexe"];
@@ -16,7 +17,7 @@ const ParfumFilter = () => {
     <div className="flex flex-col gap-6">
       {/* SECTION FILTRES */}
       <div className="flex flex-col ">
-        <div className="flex justify-between items-center gap-3">
+        <div className="flex justify-between items-center gap-3 mt-15">
           <div className="flex justify-between items-center gap-3 mb-4">
             <h1 className="font-bold text-base text-gray-500">Catégorie</h1>
             {visible ? (
@@ -57,22 +58,14 @@ const ParfumFilter = () => {
       </div>
 
       {/* SECTION PRODUITS */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 gap-y-10">
         {filteredProducts.map((item) => (
-          <div key={item.id} className="flex flex-col gap-2">
-            <img
-              src={item.image}
-              alt={item.name}
-              className="aspect-square border border-gray-200 cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out"
-              loading="lazy"
+          <div key={item.id} className="">
+            <ParfumProduct
+              image={item.image}
+              name={item.name}
+              price={item.price}
             />
-            <div>
-              <p className="font-semibold text-black text-base">{item.name}</p>
-              <p className="text-gray-400 text-sm">{item.price} cfa</p>
-              <button className="text-sm border border-gray-400 p-2 bg-black text-white cursor-pointer">
-                Ajouter au panier
-              </button>
-            </div>
           </div>
         ))}
       </div>

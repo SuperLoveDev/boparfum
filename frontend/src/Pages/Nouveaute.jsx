@@ -1,7 +1,12 @@
 import React from "react";
+import NouveauteProduct from "../Components/NouveauteProduct";
 
 const Nouveaute = () => {
-  return <div>Nouveaute</div>;
+  return (
+    <>
+      <NouveauteProduct />
+    </>
+  );
 };
 
 export default Nouveaute;
