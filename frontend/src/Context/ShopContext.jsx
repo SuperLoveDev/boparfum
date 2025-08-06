@@ -4,7 +4,9 @@ import { collections, nouveaute, parfum, products } from "../assets/products";
 export const ShopContext = createContext();
 
 const ShopContextProvider = ({ children }) => {
-  const value = { collections, products, parfum, nouveaute };
+  const allProducts = [...parfum, ...nouveaute];
+
+  const value = { collections, products, parfum, nouveaute, allProducts };
 
   return <ShopContext.Provider value={value}>{children}</ShopContext.Provider>;
 };

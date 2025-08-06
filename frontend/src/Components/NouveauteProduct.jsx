@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import ParfumProduct from "./ParfumProduct";
 import { ShopContext } from "../Context/ShopContext";
+import { Link } from "react-router-dom";
 
 const NouveauteProduct = () => {
   const { nouveaute } = useContext(ShopContext);
@@ -17,13 +18,13 @@ const NouveauteProduct = () => {
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 gap-y-10">
         {nouveaute.map((item) => (
-          <div key={item.id} className="">
+          <Link to={`/produit/${item.id}`} key={item.id} className="">
             <ParfumProduct
               image={item.image}
               name={item.name}
               price={item.price}
             />
-          </div>
+          </Link>
         ))}
       </div>
     </div>
