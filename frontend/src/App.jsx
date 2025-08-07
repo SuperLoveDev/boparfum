@@ -6,6 +6,7 @@ import Parfum from "./Pages/Parfum";
 import Nouveaute from "./Pages/Nouveaute";
 import Footer from "./Components/Footer";
 import ProductPage from "./Pages/ProductPage";
+import Cart from "./Pages/Cart";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/parfums" element={<Parfum />} />
           <Route path="/nouveaute" element={<Nouveaute />} />
           <Route path="/produit/:id" element={<ProductPage />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
         <Footer />
       </div>

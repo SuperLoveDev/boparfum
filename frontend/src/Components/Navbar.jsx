@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { SearchIcon, ShoppingCart, User, Menu, XIcon } from "lucide-react";
 
 const Navbar = () => {
@@ -38,18 +38,18 @@ const Navbar = () => {
       </ul>
 
       <div className="flex gap-5 cursor-pointer">
-        <div className="">
+        <Link className="">
           <SearchIcon />
-        </div>
-        <div className="flex relative">
+        </Link>
+        <Link to="/cart" className="flex relative">
           <ShoppingCart />
           <p className="absolute -top-3 -right-3 bg-black w-5 h-5 rounded-full text-white text-xs flex items-center justify-center">
             0
           </p>
-        </div>
-        <div className="">
+        </Link>
+        <Link to="/Login" className="">
           <User />
-        </div>
+        </Link>
       </div>
 
       <div

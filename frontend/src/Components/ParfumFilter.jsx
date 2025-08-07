@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { ChevronDown, X } from "lucide-react";
-import { parfum } from "../assets/products";
 import ParfumProduct from "./ParfumProduct";
+import { Link } from "react-router-dom";
+import { ShopContext } from "../Context/ShopContext";
 
 const ParfumFilter = () => {
+  const { parfum } = useContext(ShopContext);
   const categories = ["Tous", "Homme", "Femme", "Unisexe"];
   const [selectedCategory, setSelectedCategory] = useState("Tous");
   const [visible, setVisible] = useState(false);
@@ -60,8 +62,9 @@ const ParfumFilter = () => {
       {/* SECTION PRODUITS */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 gap-y-10">
         {filteredProducts.map((item) => (
-          <div key={item.id} className="">
+          <div to={`/produit/${item.id}`} key={item.id} className="">
             <ParfumProduct
+              id={item.id}
               image={item.image}
               name={item.name}
               price={item.price}
